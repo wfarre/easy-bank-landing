@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-pic {
+  height: calc((280 / 375) * 100vw);
+}
+
+@media all and (min-width: 1024px) {
+  .hero-pic {
+    /* height: auto; */
+    height: calc((850 / 1440) * 100vw);
+    width: calc((620 / 1440) * 100vw);
+  }
+}
