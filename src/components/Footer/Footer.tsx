@@ -4,25 +4,31 @@ import YoutubeIcon from "./assets/images/icon-youtube.svg?react";
 import TwitterIcon from "./assets/images/icon-twitter.svg?react";
 import PinterestIcon from "./assets/images/icon-pinterest.svg?react";
 import InstagramIcon from "./assets/images/icon-instagram.svg?react";
+import Logo from "./assets/images/logo.svg";
 
 const sns = [
   {
+    title: "facebook",
     logo: <FacebookIcon />,
     link: "#",
   },
   {
+    title: "youtube",
     logo: <YoutubeIcon />,
     link: "#",
   },
   {
+    title: "twitter",
     logo: <TwitterIcon />,
     link: "#",
   },
   {
+    title: "pinterest",
     logo: <PinterestIcon />,
     link: "#",
   },
   {
+    title: "instagram",
     logo: <InstagramIcon />,
     link: "#",
   },
@@ -62,11 +68,14 @@ const linkList = [
 const Footer = () => {
   return (
     <footer className="bg-dark-blue py-8 text-sm text-white lg:py-10 xl:text-lg">
-      <nav className="flex flex-col items-center gap-7 lg:mx-40 lg:flex-row lg:items-stretch lg:gap-28">
+      <nav
+        className="flex flex-col items-center gap-7 lg:mx-40 lg:flex-row lg:items-stretch lg:gap-28"
+        aria-label="footer navigation"
+      >
         <ul className="flex flex-col gap-6 lg:justify-between lg:gap-10">
           <li>
             <a href="#">
-              <img src={"/assets/images/logo.svg"} alt="easy bank logo" />
+              <img src={Logo} alt="easy bank logo" />
             </a>
           </li>
           <li>
@@ -79,6 +88,9 @@ const Footer = () => {
                       href={item.link}
                     >
                       {item.logo}
+                      <span className="absolute left-0 top-0 h-0 w-0 opacity-0">
+                        {item.title}
+                      </span>
                     </a>
                   </li>
                 );

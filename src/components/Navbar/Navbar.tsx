@@ -32,7 +32,10 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="relative left-0 top-0 z-50 flex h-16 w-full items-center justify-between bg-white px-6 lg:relative lg:px-40">
+      <nav
+        className="relative left-0 top-0 z-50 flex h-16 w-full items-center justify-between bg-white px-6 lg:relative lg:px-40"
+        aria-label="header navigation"
+      >
         <div>
           <img src={Logo} alt="easybank logo" />
         </div>
