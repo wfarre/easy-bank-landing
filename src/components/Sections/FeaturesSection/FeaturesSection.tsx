@@ -1,9 +1,9 @@
 import React from "react";
-import FeatureCard from "./FeatureCard";
-import IconApi from "../assets/images/icon-api.svg";
-import IconBudgeting from "../assets/images/icon-budgeting.svg";
-import IconOnboarding from "../assets/images/icon-onboarding.svg";
-import IconOnline from "../assets/images/icon-online.svg";
+import FeatureCard from "../../Cards/FeatureCard";
+import IconApi from "./assets/images/icon-api.svg";
+import IconBudgeting from "./assets/images/icon-budgeting.svg";
+import IconOnboarding from "./assets/images/icon-onboarding.svg";
+import IconOnline from "./assets/images/icon-online.svg";
 
 const features = [
   {
@@ -35,10 +35,12 @@ const features = [
 const FeaturesSection = () => {
   return (
     <section
-      className="bg-gray-200 px-6 py-16 text-center lg:px-40 lg:py-28 lg:text-left"
+      className="bg-bg-secondary px-6 py-16 text-center lg:px-40 lg:py-28 lg:text-left"
       id="features"
     >
-      <h2 className="mb-6 text-2xl text-4xl">Why choose Easybank?</h2>
+      <h2 className="text-dark-blue mb-6 text-2xl lg:text-4xl">
+        Why choose Easybank?
+      </h2>
       <p>
         We leverage Open Banking to turn your bank account into your financial
         hub. Control your finances like never before.

@@ -8,7 +8,7 @@ interface Props {
 
 const FeatureCard = (props: Props) => {
   return (
-    <article className="flex flex-col items-center gap-7 md:max-w-[260px] lg:items-start lg:gap-9">
+    <article className="mx-auto flex flex-col items-center gap-7 md:max-w-[260px] lg:items-start lg:gap-9">
       <div>
         <img src={props.picture} alt="" />
       </div>

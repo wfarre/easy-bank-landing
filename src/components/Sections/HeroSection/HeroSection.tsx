@@ -1,8 +1,8 @@
 import React from "react";
-import HeroBgImageDesktop from "../assets/images/bg-intro-desktop.svg";
-import HeroBgImageMobile from "../assets/images/bg-intro-mobile.svg";
-import HeroImage from "../assets/images/image-mockups.png";
-import Button from "./Button";
+import HeroBgImageDesktop from "./assets/images/bg-intro-desktop.svg";
+import HeroBgImageMobile from "./assets/images/bg-intro-mobile.svg";
+import HeroImage from "./assets/images/image-mockups.png";
+import Button from "../../Button";
 
 const HeroSection = () => {
   return (
@@ -14,7 +14,7 @@ const HeroSection = () => {
           /> */}
       <div className="relative flex flex-col-reverse lg:flex-row lg:items-center lg:justify-between lg:pl-40">
         <div className="mx-auto flex max-w-96 flex-col items-center gap-8 py-12 text-center lg:mx-0 lg:items-start lg:text-left">
-          <h1 className="text-3xl lg:text-5xl">
+          <h1 className="text-dark-blue text-3xl lg:text-5xl">
             Next generation digital banking
           </h1>
           <p className="text-gray-500">
