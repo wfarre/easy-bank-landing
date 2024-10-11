@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "../Button";
 import FacebookIcon from "./assets/images/icon-facebook.svg?react";
 import YoutubeIcon from "./assets/images/icon-youtube.svg?react";

@@ -1,4 +1,3 @@
-import React from "react";
 import FeatureCard from "../../Cards/FeatureCard";
 import IconApi from "./assets/images/icon-api.svg";
 import IconBudgeting from "./assets/images/icon-budgeting.svg";
